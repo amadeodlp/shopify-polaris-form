@@ -21,7 +21,7 @@ const Home = () => {
     const [lat, setLat] = useState("");
     const [lng, setLng] = useState("");
     
-    Geocode.setApiKey("AIzaSyB-Fq_in6YaopXEqcM2XSZ3rHotk49SEPk")
+    Geocode.setApiKey(process.env.REACT_APP_URL_GEOCODE_API_KEY)
     
     
     useEffect(() => {

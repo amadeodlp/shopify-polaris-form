@@ -122,7 +122,7 @@ return (
                   <TextField label="Address" {...fields.address} />
                   <TextField label="Phone number" {...fields.phone} />
                   <ReCaptcha
-                    sitekey="6LdGnPUdAAAAAK-DhI_WVg75uAirO0snSGnUwu5B"
+                    sitekey={process.env.REACT_APP_URL_GOOGLEMAPS_API_KEY}
                     render="explicit"
                     onloadCallback={callback}
                   />
